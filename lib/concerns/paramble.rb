@@ -1,6 +1,8 @@
 module Paramble
   
-  module 
+  module InstanceMethods
+    
+  end
   
   
 end

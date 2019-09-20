@@ -3,7 +3,7 @@ require 'pry'
 class Artist
   extend Findable::ClassMethods
   extend Memorable::ClassMethods
-  include Paramble::InstanceMethods
+
   
   attr_accessor :name
   attr_reader :songs
@@ -30,7 +30,7 @@ class Artist
     songs.each { |song| add_song(song) }
   end
 
-  # def to_param
-  #   name.downcase.gsub(' ', '-')
-  # end
+  def to_param
+    name.downcase.gsub(' ', '-')
+  end
 end
